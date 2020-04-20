@@ -1,0 +1,23 @@
+.homepage-sidebar.btn-group-vertical {
+  margin-bottom: 20px;
+}
+
+.homepage-sidebar .btn-outline-primary {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.homepage-sidebar .btn svg {
+  float: left;
+  margin-top: 7px;
+}
+
+.homepage-sidebar .btn span {
+  float: center;
+  margin-left: -20px;
+  letter-spacing: 2.5px;
+}
+
+.homepage-sidebar.btn-info {
+  padding-right: 50px;
+}

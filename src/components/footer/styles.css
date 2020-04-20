@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+  bottom: 0vh;
+  z-index: 2000;
+  width: 100%;
+}
+
+.footer h4 {
+  text-transform: uppercase;
+  font-weight: 650;
+  color: #ffffff;
+  letter-spacing: 1.3px;
+}
+
+.footer p {
+  color: #ffffff;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer li a {
+  color: white;
+  transition: color 0.2s;
+  &:hover {
+    text-decoration: none;
+    color: #4180cb;
+  }
+}
+
+.footer .svg-inline--fa {
+  color: white;
+  font-size: 50px;
+  margin: 5px;
+}
+
+.footer span {
+  display: flex;
+  justify-content: center;
+}

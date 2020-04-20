@@ -1,0 +1,8 @@
+.bs-stepper .step-trigger:focus {
+  color: #313a57;
+  outline: none;
+}
+
+.active .bs-stepper-circle {
+  background-color: #313a57;
+}

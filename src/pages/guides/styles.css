@@ -1,0 +1,119 @@
+.tab-button {
+  margin-top: 20px;
+}
+
+.tab-name {
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.sidebar {
+  margin-bottom: 15px;
+  margin-top: -20px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    padding: 0 0 0.5em 2em;
+  }
+}
+
+.sidebar a {
+  color: #313a57;
+}
+
+.spinner {
+  position: fixed;
+  z-index: 1031;
+  top: 55%;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  .spinner {
+    position: fixed;
+    z-index: 1031;
+    top: 40%;
+    left: 48%;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.guides {
+  margin-top: -25px;
+  border: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .guides {
+    margin-top: 0px;
+    border: none;
+  }
+}
+
+.guides h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 2px;
+}
+
+.guides h3,
+h4,
+h5 {
+  font-weight: 650;
+}
+
+.nav-link.active {
+  font-weight: 650;
+}
+
+.content-header {
+  letter-spacing: 1.3px;
+  font-weight: 650;
+  text-decoration: underline;
+}
+
+.toc {
+  margin-bottom: 15px;
+  margin-top: -20px;
+  padding: 0 1em 2em 0;
+  font-size: 15px;
+}
+
+.toc a {
+  color: #313a57;
+}
+
+.toc ul {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+.toc li {
+  margin-left: -8px;
+  margin-top: 7px;
+}
+
+.guide-appearing-enter {
+  opacity: 0;
+}
+.guide-appearing-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.guide-appearing-exit {
+  opacity: 1;
+}
+.guide-appearing-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}

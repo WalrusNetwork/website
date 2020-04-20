@@ -1,0 +1,11 @@
+.redirect {
+  animation: blinker 1s linear infinite;
+  text-align: center;
+  line-height: 60vh;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

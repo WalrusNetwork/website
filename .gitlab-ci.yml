@@ -1,0 +1,33 @@
+stages:
+  - deploy
+
+deploy:
+  image: node:12-alpine
+  stage: deploy
+  before_script:
+    # Install CA certs, openssl to https downloads, python for gcloud sdk
+    - apk add --update make ca-certificates openssl python git
+    - update-ca-certificates
+    # Download and install Google Cloud SDK
+    - wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
+    - tar zxvf google-cloud-sdk.tar.gz && ./google-cloud-sdk/install.sh --usage-reporting=false --path-update=true
+    - google-cloud-sdk/bin/gcloud --quiet components update
+    - google-cloud-sdk/bin/gcloud auth activate-service-account --key-file $GCLOUD_SERVICE_KEY
+    - google-cloud-sdk/bin/gcloud config set project walrus-network
+    - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/WalrusNetwork/website/markdown-content.git".insteadOf git@gitlab.com:WalrusNetwork/website/markdown-content.git
+    - git clone git@gitlab.com:WalrusNetwork/website/markdown-content.git
+    - rm -rf public/guides/* public/other/*
+    - mv markdown-content/* public/
+    - mv src/app/config.json.example src/app/config.json
+    - rm -f public/README.md
+  script:
+    - npm install --no-save
+    - npm run build
+    - mv app.yaml build
+    - cd build
+    - ../google-cloud-sdk/bin/gcloud app deploy --stop-previous-version --version=v1
+  only:
+    - master
+  retry:
+    max: 2
+    when: script_failure

@@ -1,0 +1,212 @@
+@media only screen and (max-width: 992px) {
+  .user {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.user .avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 7px;
+  float: left;
+  display: inline-block;
+}
+
+.user .avatar.over {
+  height: 90px;
+  width: 90px;
+}
+
+@media only screen and (max-width: 650px) {
+  .user .avatar {
+    height: 15vw;
+    width: 15vw;
+  }
+
+  .user .avatar.over {
+    height: 13vw;
+    width: 13vw;
+  }
+}
+
+.user .username {
+  float: left;
+  margin-left: 20px;
+  text-overflow: clip;
+}
+
+.user h1 {
+  font-weight: 650;
+  font-size: 45px;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user .over {
+  font-size: 35px;
+}
+
+.user .status span {
+  max-width: 0;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 3.2px;
+  margin-right: 3.2px;
+}
+.user .status:hover span {
+  max-width: 7rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .user h1 {
+    font-size: 5vw;
+  }
+
+  .user h1.over {
+    font-size: 4.34vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1220px) {
+  .user h1.over {
+    font-size: 2.9vw;
+  }
+}
+
+.kills {
+  float: right;
+}
+
+@media only screen and (max-width: 992px) {
+  .kills {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+}
+
+.kill {
+  float: right;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.kill span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: gray;
+}
+
+.info {
+  text-align: center;
+  display: inline-block;
+}
+
+.info span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: gray;
+}
+
+.info small {
+  color: gray;
+  font-size: 20px;
+}
+
+.coming-soon {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.coming-soon h3 {
+  animation: coming-soon 2s linear infinite;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 650;
+  color: gray;
+}
+
+@keyframes coming-soon {
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.about .about-col {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.about .block {
+  float: left;
+  margin-top: 0.5em;
+  max-width: 60px;
+  vertical-align: middle;
+}
+
+.about .stats-container {
+  display: table;
+  margin: auto;
+}
+
+.about .stats {
+  float: left;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.about .stats h3 {
+  font-size: 40px;
+  font-weight: 650;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  .about .stats h3 {
+    font-size: 5vw;
+  }
+}
+
+.about .stats small {
+  margin-top: 0px;
+  color: gray;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.about span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: gray;
+}
+
+.friend-avatar {
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.about blockquote {
+  border-left: 5px solid #eee;
+}
+
+.quote {
+  padding: 20px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}

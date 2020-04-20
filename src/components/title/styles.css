@@ -1,0 +1,23 @@
+.site-title {
+  position: relative;
+  height: 17vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.site-title h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+}
+
+.container-title {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

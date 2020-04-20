@@ -1,0 +1,12 @@
+.other h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 2px;
+}
+
+.other h3,
+h4,
+h5 {
+  font-weight: 550;
+}

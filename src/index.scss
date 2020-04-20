@@ -1,0 +1,13 @@
+$theme-colors: (
+  "primary": #313a57,
+  "secondary": #6f8ab7
+);
+
+$link-color: darken(#007bff, 15%);
+
+$font-family-sans-serif: "Raleway";
+
+/* prettier-ignore */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900);
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bs-stepper/dist/css/bs-stepper.min.css";

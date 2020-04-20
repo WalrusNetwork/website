@@ -1,0 +1,109 @@
+.blog {
+  position: relative;
+  min-height: 10vh;
+}
+
+.blog h1 {
+  font-size: 25px;
+}
+
+.blog h2 {
+  font-size: 23px;
+}
+
+.blog h3 {
+  font-size: 20px;
+}
+
+.blog-spinner {
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.blog .card {
+  margin-bottom: 20px;
+}
+
+.blog .card .title {
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.blog .card .avatar {
+  float: right;
+  margin: 4px 5px 0 0;
+}
+
+.blog .card .author-avatar {
+  width: 43px;
+  height: 43px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.blog .card div .author {
+  float: right;
+  margin-right: 8px;
+}
+
+.blog .card div .author-name {
+  float: right;
+  font-weight: bold;
+  color: #313a57;
+}
+
+.blog .card div .author-rank {
+  margin-left: "5px";
+  float: right;
+}
+
+.blog .card div .walrus-rank {
+  background-color: #313a57;
+  float: right;
+}
+
+.read-more {
+  padding: 0;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  border: none;
+  margin-top: -60px;
+  background-color: transparent;
+}
+
+.read-more .btn {
+  width: 80px;
+  height: 80px;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: relative;
+  float: right;
+}
+
+.read-more p {
+  -webkit-transform: rotate(-45deg);
+  margin-top: 35px;
+  margin-left: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.blog-appearing-enter {
+  opacity: 0;
+}
+.blog-appearing-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.blog-appearing-exit {
+  opacity: 1;
+}
+.blog-appearing-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
